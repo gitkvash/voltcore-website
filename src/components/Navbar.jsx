@@ -11,9 +11,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'მთავარი', path: '/' },
-    { name: 'ჩვენ შესახებ', path: '/about' },
     { name: 'პროდუქცია', path: '/products' },
-    { name: 'კონტაქტი', path: '/contact' },
+    { name: 'სერვისები', path: '/services' },
+    { name: 'მდგრადობა', path: '/sustainability' },
+    { name: 'ჩვენ შესახებ', path: '/about' },
   ];
 
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
       <div className="container nav-container">
         <Link to="/" className="logo">
           <Zap className="logo-icon" />
-          <span className="logo-text">VoltCore <span className="gradient-text">Industries</span></span>
+          <span className="logo-text">VoltCore</span>
         </Link>
         
         <div className="desktop-menu">
@@ -35,10 +36,13 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-
-        <button className="mobile-menu-btn" onClick={toggleMenu}>
-          {isOpen ? <X /> : <Menu />}
-        </button>
+        
+        <div className="nav-actions">
+           <Link to="/contact" className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '14px' }}>კონტაქტი</Link>
+           <button className="mobile-menu-btn" onClick={toggleMenu}>
+             {isOpen ? <X /> : <Menu />}
+           </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -54,6 +58,7 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+           <Link to="/contact" className="mobile-link" onClick={() => setIsOpen(false)}>კონტაქტი</Link>
         </div>
       )}
     </nav>

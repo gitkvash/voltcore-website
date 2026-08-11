@@ -1,45 +1,39 @@
 import React from 'react';
+import './PageStyles.css';
 import './Products.css';
 
 const Products = () => {
   return (
-    <div className="products animate-fade-in section">
+    <div className="page-wrapper animate-fade-in section">
       <div className="container">
-        <h1 className="text-center gradient-text" style={{ marginBottom: '3rem', textAlign: 'center', fontSize: '2.5rem' }}>ჩვენი პროდუქცია</h1>
+        <div className="text-center" style={{ marginBottom: '4rem' }}>
+           <h1 className="headline">უმაღლესი ხარისხი.</h1>
+           <p className="subheadline">ჩვენი პროდუქცია შექმნილია მაქსიმალური წარმადობისთვის.</p>
+        </div>
         
-        <div className="products-grid">
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/product_board.jpg" alt="მაღალი ძაბვის ტრანსფორმატორი" />
-            </div>
-            <div className="product-info">
+        <div className="apple-grid">
+          <div className="apple-card">
+            <div className="apple-card-info">
               <h3>Nexus-9 ტრანსფორმატორი</h3>
-              <p>ინდუსტრიული სტანდარტის მაღალი ძაბვის სისტემა, იდეალურია დიდი ქარხნებისთვის.</p>
-              <button className="btn btn-primary" style={{ width: '100%', marginTop: '1rem' }}>დეტალურად</button>
+              <p>ინდუსტრიული სტანდარტის მაღალი ძაბვის სისტემა.</p>
             </div>
+            <img src="/product_board.jpg" alt="მაღალი ძაბვის ტრანსფორმატორი" className="apple-card-img" />
           </div>
 
-          {/* Placeholder cards to show layout */}
-          <div className="product-card">
-            <div className="product-image" style={{ background: 'var(--bg-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '250px' }}>
-              <span style={{ color: 'var(--text-secondary)' }}>ფოტო მალე დაემატება</span>
-            </div>
-            <div className="product-info">
+          <div className="apple-card bg-secondary">
+            <div className="apple-card-info">
               <h3>ავტომატიზაციის პანელი</h3>
               <p>ჭკვიანი მართვის სისტემა სრული მონიტორინგით.</p>
-              <button className="btn" style={{ width: '100%', marginTop: '1rem' }}>დეტალურად</button>
             </div>
+            <div className="apple-card-placeholder">მალე დაემატება</div>
           </div>
           
-          <div className="product-card">
-             <div className="product-image" style={{ background: 'var(--bg-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '250px' }}>
-              <span style={{ color: 'var(--text-secondary)' }}>ფოტო მალე დაემატება</span>
-            </div>
-            <div className="product-info">
+          <div className="apple-card bg-secondary">
+            <div className="apple-card-info">
               <h3>ინდუსტრიული კაბელები</h3>
-              <p>მაღალი გამტარობის და თერმო-მდგრადი კაბელები ნებისმიერი გარემოსთვის.</p>
-              <button className="btn" style={{ width: '100%', marginTop: '1rem' }}>დეტალურად</button>
+              <p>მაღალი გამტარობის და თერმო-მდგრადი კაბელები.</p>
             </div>
+            <div className="apple-card-placeholder">მალე დაემატება</div>
           </div>
         </div>
       </div>
