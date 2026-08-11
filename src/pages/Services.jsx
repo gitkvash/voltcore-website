@@ -1,15 +1,17 @@
 import React from 'react';
-import './PageStyles.css'; // We'll create a shared CSS for Apple style pages
+import { useTranslation } from 'react-i18next';
+import './PageStyles.css';
 
 const Services = () => {
+  const { t } = useTranslation();
   return (
     <div className="page-wrapper animate-fade-in">
       <div className="container text-center section">
-        <h1 className="headline">უმაღლესი დონის სერვისი.</h1>
-        <p className="subheadline">მონტაჟი, მხარდაჭერა და კონსულტაცია თქვენი წარმატებისთვის.</p>
+        <h1 className="headline">{t('services.title')}</h1>
+        <p className="subheadline">{t('services.subtitle')}</p>
         
         <div className="hero-image-wrapper">
-          <img src="/services_img.jpg" alt="ჩვენი სერვისები" className="hero-image" />
+          <img src="/services_img.jpg" alt={t('services.title')} className="hero-image" />
         </div>
       </div>
 
@@ -17,16 +19,16 @@ const Services = () => {
         <div className="container">
            <div className="grid-3">
               <div className="info-card">
-                <h3>პროფესიონალური მონტაჟი</h3>
-                <p>ჩვენი სერტიფიცირებული ინჟინრები უზრუნველყოფენ მოწყობილობების უსაფრთხო და სწრაფ ინსტალაციას.</p>
+                <h3>{t('services.serv1_title')}</h3>
+                <p>{t('services.serv1_desc')}</p>
               </div>
               <div className="info-card">
-                <h3>ტექნიკური მხარდაჭერა</h3>
-                <p>24/7 ტექნიკური დახმარება და მონიტორინგი შეფერხებების თავიდან ასაცილებლად.</p>
+                <h3>{t('services.serv2_title')}</h3>
+                <p>{t('services.serv2_desc')}</p>
               </div>
               <div className="info-card">
-                <h3>აუდიტი და კონსულტაცია</h3>
-                <p>ენერგოეფექტურობის აუდიტი და ოპტიმიზაციის სტრატეგიები თქვენი ბიზნესისთვის.</p>
+                <h3>{t('services.serv3_title')}</h3>
+                <p>{t('services.serv3_desc')}</p>
               </div>
            </div>
         </div>

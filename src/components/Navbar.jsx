@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Zap, Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   const navLinks = [
-    { name: 'მთავარი', path: '/' },
-    { name: 'პროდუქცია', path: '/products' },
-    { name: 'სერვისები', path: '/services' },
-    { name: 'მდგრადობა', path: '/sustainability' },
-    { name: 'ჩვენ შესახებ', path: '/about' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.products'), path: '/products' },
+    { name: t('nav.services'), path: '/services' },
+    { name: t('nav.sustainability'), path: '/sustainability' },
+    { name: t('nav.about'), path: '/about' },
   ];
 
   return (
@@ -38,7 +44,12 @@ const Navbar = () => {
         </div>
         
         <div className="nav-actions">
-           <Link to="/contact" className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '14px' }}>კონტაქტი</Link>
+           <div className="lang-switcher">
+             <button className={`lang-btn ${i18n.language === 'ge' ? 'active' : ''}`} onClick={() => changeLanguage('ge')}>GE</button>
+             <span className="lang-sep">|</span>
+             <button className={`lang-btn ${i18n.language === 'en' ? 'active' : ''}`} onClick={() => changeLanguage('en')}>EN</button>
+           </div>
+           <Link to="/contact" className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '14px' }}>{t('nav.contact')}</Link>
            <button className="mobile-menu-btn" onClick={toggleMenu}>
              {isOpen ? <X /> : <Menu />}
            </button>
@@ -58,7 +69,7 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-           <Link to="/contact" className="mobile-link" onClick={() => setIsOpen(false)}>კონტაქტი</Link>
+           <Link to="/contact" className="mobile-link" onClick={() => setIsOpen(false)}>{t('nav.contact')}</Link>
         </div>
       )}
     </nav>

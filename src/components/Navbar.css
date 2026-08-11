@@ -92,3 +92,9 @@
 .mobile-link:hover {
   background-color: var(--bg-primary);
 }
+
+.lang-switcher { display: flex; align-items: center; margin-right: 1rem; }
+.lang-btn { background: none; border: none; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--text-secondary); transition: color 0.3s; }
+.lang-btn.active { color: var(--text-primary); font-weight: 700; }
+.lang-btn:hover { color: var(--accent-blue); }
+.lang-sep { margin: 0 8px; color: var(--border-color); }
