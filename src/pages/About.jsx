@@ -21,20 +21,18 @@ const About = () => {
       </div>
 
       <div className="container section text-center">
-         <h2 className="headline" style={{fontSize: '2.5rem', marginBottom: '3rem'}}>{t('about.video_title') || 'Corporate Demo Video'}</h2>
+         <h2 className="headline" style={{fontSize: '2.5rem', marginBottom: '3rem'}}>{t('about.video_title')}</h2>
          <div style={{maxWidth: '1000px', margin: '0 auto'}}>
-           <video 
-             width="100%" 
-             autoPlay 
-             loop 
-             muted 
-             playsInline 
-             controls
-             style={{borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)', background: '#000'}}
-           >
-             <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
-             Your browser does not support the video tag.
-           </video>
+           <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)', background: '#000'}}>
+             <iframe 
+               style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} 
+               src="https://www.youtube.com/embed/LXb3EKWsInQ?autoplay=1&mute=1&loop=1&playlist=LXb3EKWsInQ" 
+               title="Corporate Demo Video" 
+               frameBorder="0" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+               allowFullScreen>
+             </iframe>
+           </div>
            <p style={{marginTop: '1rem', color: 'var(--text-secondary)'}}>
              *ეს არის სატესტო (Placeholder) ვიდეო დიზაინის სადემონსტრაციოდ.
            </p>
