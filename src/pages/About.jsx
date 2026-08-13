@@ -21,6 +21,27 @@ const About = () => {
       </div>
 
       <div className="container section text-center">
+         <h2 className="headline" style={{fontSize: '2.5rem', marginBottom: '3rem'}}>{t('about.video_title') || 'Corporate Demo Video'}</h2>
+         <div style={{maxWidth: '1000px', margin: '0 auto'}}>
+           <video 
+             width="100%" 
+             autoPlay 
+             loop 
+             muted 
+             playsInline 
+             controls
+             style={{borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)', background: '#000'}}
+           >
+             <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
+             Your browser does not support the video tag.
+           </video>
+           <p style={{marginTop: '1rem', color: 'var(--text-secondary)'}}>
+             *ეს არის სატესტო (Placeholder) ვიდეო დიზაინის სადემონსტრაციოდ.
+           </p>
+         </div>
+      </div>
+
+      <div className="container section text-center">
         <h2 className="headline" style={{fontSize: '2.5rem', marginBottom: '3rem'}}>{t('about.leadership_title')}</h2>
         <div style={{display: 'flex', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap'}}>
            <div style={{textAlign: 'center'}}>
