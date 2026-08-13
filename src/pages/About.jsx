@@ -29,7 +29,7 @@ const About = () => {
              <p style={{color: 'var(--text-secondary)'}}>{t('about.leader_1_role')}</p>
            </div>
            <div style={{textAlign: 'center'}}>
-             <div style={{width: '200px', height: '200px', borderRadius: '50%', backgroundColor: 'var(--border-color)', marginBottom: '1.5rem'}}></div>
+             <img src="/leader_cto.jpg" alt={t('about.leader_2_name')} style={{width: '200px', height: '200px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1.5rem'}} />
              <h3>{t('about.leader_2_name')}</h3>
              <p style={{color: 'var(--text-secondary)'}}>{t('about.leader_2_role')}</p>
            </div>

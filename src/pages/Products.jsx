@@ -29,12 +29,14 @@ const Products = () => {
               <h3>{t('products.p_nex7_title')}</h3>
               <p>{t('products.p_nex7_desc')}</p>
             </div>
+            <img src="/product_trans_7.jpg" alt={t('products.p_nex7_title')} className="apple-card-img" />
           </div>
           <div className="apple-card bg-secondary">
             <div className="apple-card-info">
               <h3>{t('products.p_nex5_title')}</h3>
               <p>{t('products.p_nex5_desc')}</p>
             </div>
+            <img src="/product_trans_5.jpg" alt={t('products.p_nex5_title')} className="apple-card-img" />
           </div>
         </div>
 
@@ -53,12 +55,14 @@ const Products = () => {
               <h3>{t('products.p_auto_edge_title')}</h3>
               <p>{t('products.p_auto_edge_desc')}</p>
             </div>
+            <img src="/product_auto_edge.jpg" alt={t('products.p_auto_edge_title')} className="apple-card-img" />
           </div>
           <div className="apple-card bg-secondary">
             <div className="apple-card-info">
               <h3>{t('products.p_auto_vision_title')}</h3>
               <p>{t('products.p_auto_vision_desc')}</p>
             </div>
+            <img src="/product_auto_vision.jpg" alt={t('products.p_auto_vision_title')} className="apple-card-img" />
           </div>
         </div>
 
@@ -77,12 +81,14 @@ const Products = () => {
               <h3>{t('products.p_cab_flex_title')}</h3>
               <p>{t('products.p_cab_flex_desc')}</p>
             </div>
+            <img src="/product_cab_flex.jpg" alt={t('products.p_cab_flex_title')} className="apple-card-img" />
           </div>
           <div className="apple-card bg-secondary">
             <div className="apple-card-info">
               <h3>{t('products.p_cab_fire_title')}</h3>
               <p>{t('products.p_cab_fire_desc')}</p>
             </div>
+            <img src="/product_cab_fire.jpg" alt={t('products.p_cab_fire_title')} className="apple-card-img" />
           </div>
         </div>
 

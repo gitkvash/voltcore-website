@@ -23,7 +23,7 @@ const Projects = () => {
            </div>
 
            <div style={{background: 'var(--bg-primary)', borderRadius: '24px', overflow: 'hidden', display: 'flex', flexWrap: 'wrap', flexDirection: 'row-reverse', boxShadow: '0 10px 30px rgba(0,0,0,0.05)'}}>
-             <div style={{flex: '1 1 400px', background: 'var(--border-color)', minHeight: '300px'}}></div>
+             <img src="/product_automation.jpg" alt="" style={{flex: '1 1 400px', objectFit: 'cover', minHeight: '300px'}} />
              <div style={{flex: '1 1 400px', padding: '4rem'}}>
                 <h2 style={{fontSize: '2rem', marginBottom: '1.5rem'}}>{t('projects.proj2_title')}</h2>
                 <p style={{fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.6'}}>{t('projects.proj2_desc')}</p>
@@ -31,7 +31,7 @@ const Projects = () => {
            </div>
 
            <div style={{background: 'var(--bg-primary)', borderRadius: '24px', overflow: 'hidden', display: 'flex', flexWrap: 'wrap', boxShadow: '0 10px 30px rgba(0,0,0,0.05)'}}>
-             <div style={{flex: '1 1 400px', background: 'var(--border-color)', minHeight: '300px'}}></div>
+             <img src="/office_hq.jpg" alt="" style={{flex: '1 1 400px', objectFit: 'cover', minHeight: '300px'}} />
              <div style={{flex: '1 1 400px', padding: '4rem'}}>
                 <h2 style={{fontSize: '2rem', marginBottom: '1.5rem'}}>{t('projects.proj3_title')}</h2>
                 <p style={{fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.6'}}>{t('projects.proj3_desc')}</p>
