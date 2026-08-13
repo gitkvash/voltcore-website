@@ -17,7 +17,7 @@ const Services = () => {
 
       <div className="bg-secondary section">
         <div className="container">
-           <div className="grid-3">
+           <div className="grid-3" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))'}}>
               <div className="info-card">
                 <h3>{t('services.serv1_title')}</h3>
                 <p>{t('services.serv1_desc')}</p>
@@ -29,6 +29,10 @@ const Services = () => {
               <div className="info-card">
                 <h3>{t('services.serv3_title')}</h3>
                 <p>{t('services.serv3_desc')}</p>
+              </div>
+              <div className="info-card">
+                <h3>{t('services.serv4_title')}</h3>
+                <p>{t('services.serv4_desc')}</p>
               </div>
            </div>
         </div>

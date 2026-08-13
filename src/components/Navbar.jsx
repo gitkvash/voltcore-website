@@ -16,11 +16,12 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: t('nav.home'), path: '/' },
     { name: t('nav.products'), path: '/products' },
     { name: t('nav.services'), path: '/services' },
+    { name: t('nav.projects'), path: '/projects' },
     { name: t('nav.sustainability'), path: '/sustainability' },
     { name: t('nav.about'), path: '/about' },
+    { name: t('nav.careers'), path: '/careers' },
   ];
 
   return (
@@ -59,6 +60,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="mobile-menu">
+          <Link to="/" className="mobile-link" onClick={() => setIsOpen(false)}>{t('nav.home')}</Link>
           {navLinks.map((link) => (
             <Link 
               key={link.name} 
