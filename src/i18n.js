@@ -26,7 +26,15 @@ const resources = {
         "clients_title": "Trusted by Industry Leaders",
         "testimonials_title": "Client Success",
         "test_1_quote": "VoltCore transformed our grid stability. Unmatched quality.", "test_1_author": "- Sarah Jenkins, CTO of NexaGrid",
-        "test_2_quote": "The automation panels reduced our downtime by 40%.", "test_2_author": "- David Chen, Plant Manager"
+        "test_2_quote": "The automation panels reduced our downtime by 40%.", "test_2_author": "- David Chen, Plant Manager",
+        "cap_title": "Core Capabilities",
+        "cap_1_title": "Smart Grid Solutions", "cap_1_desc": "Intelligent power distribution and IoT integration.",
+        "cap_2_title": "Industrial Automation", "cap_2_desc": "Next-gen PLCs and robotic control systems.",
+        "cap_3_title": "Renewable Integration", "cap_3_desc": "Connecting green energy directly to the main grid.",
+        "feat_proj_title": "Featured Projects",
+        "feat_proj_1_title": "North Sea Windfarm", "feat_proj_1_desc": "A massive 500MW offshore installation powered by VoltCore.",
+        "feat_proj_2_title": "Berlin Gigafactory", "feat_proj_2_desc": "Fully automated production lines with zero emissions.",
+        "partners_title": "Trusted by Industry Leaders"
       },
       "about": {
         "title": "About Us.",
@@ -145,7 +153,15 @@ const resources = {
         "clients_title": "გვენდობიან ინდუსტრიის ლიდერები",
         "testimonials_title": "კლიენტების წარმატება",
         "test_1_quote": "VoltCore-მა სრულად გარდაქმნა ჩვენი ქსელის სტაბილურობა.", "test_1_author": "- სარა ჯენკინსი, NexaGrid-ის CTO",
-        "test_2_quote": "ავტომატიზაციის პანელებმა 40%-ით შეამცირეს ჩვენი დანაკარგები.", "test_2_author": "- დავით ჩენი, ქარხნის მენეჯერი"
+        "test_2_quote": "ავტომატიზაციის პანელებმა 40%-ით შეამცირეს ჩვენი დანაკარგები.", "test_2_author": "- დავით ჩენი, ქარხნის მენეჯერი",
+        "cap_title": "ძირითადი შესაძლებლობები",
+        "cap_1_title": "ჭკვიანი ქსელები", "cap_1_desc": "ენერგიის ინტელექტუალური დისტრიბუცია და IoT.",
+        "cap_2_title": "ინდუსტრიული ავტომატიზაცია", "cap_2_desc": "უახლესი თაობის PLC და რობოტული სისტემები.",
+        "cap_3_title": "განახლებადი ენერგია", "cap_3_desc": "მწვანე ენერგიის ინტეგრაცია მთავარ ქსელში.",
+        "feat_proj_title": "გამორჩეული პროექტები",
+        "feat_proj_1_title": "ჩრდილოეთის ზღვის სადგური", "feat_proj_1_desc": "მასშტაბური 500MW ოფშორული სადგური.",
+        "feat_proj_2_title": "ბერლინის მეგა-ქარხანა", "feat_proj_2_desc": "სრულად ავტომატიზირებული საწარმოო ხაზები.",
+        "partners_title": "გვენდობიან ინდუსტრიის ლიდერები"
       },
       "about": {
         "title": "ჩვენ შესახებ.",
